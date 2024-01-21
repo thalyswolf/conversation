@@ -1,1 +1,106 @@
 // app global css in SCSS form
+.background__1 {
+    background-image: url('../assets/background.jpg');
+    min-height: 100vh;
+    max-height: 100vh;
+    color: $secondary;
+}
+
+.background__2 {
+    background-color: #3398FD;
+    padding: 50px;
+}
+
+.login__card {
+    color: $primary;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 45vh;
+}
+
+.btn__start {
+    margin: 30px;
+    font-size: 25px;
+}
+
+.video__area {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video__player {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.small__video__player {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    height: 170px;
+    width: 300px;
+    border-radius: 5px;
+    border:2px solid $primary;
+    -webkit-box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
+    box-shadow: 3px 3px 15px -1px rgba(0,0,0,0.77);
+    z-index: 999;
+    transform: rotateY(180deg);
+}
+
+.chat__area {
+    background-color: #fff;
+    position: fixed;
+    right: 30px;
+    top: 5vh;
+    height: 90vh;
+    width: 300px;
+    border-radius: 20px;
+    padding: 30px 15px;
+    box-shadow: $primary 5px 5px;
+}
+
+#controls{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1em;
+}
+
+.control__container{
+    background-color: $primary;
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.control__container:hover {
+    opacity: 0.7;
+}
+
+.control__container img{
+    height: 30px;
+    width: 30px;
+}
+
+.media__disabled {
+    background-color: rgb(255, 80, 80, 1);
+}
+
+#leave-btn{
+    background-color: rgb(255, 80, 80, 1);
+}
+
+.input__message {
+    position: absolute;
+    top: 88vh;
+    right: 50px;
+    width: 260px;
+}
